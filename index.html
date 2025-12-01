@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Vault - Xbox File Explorer (Coming Soon)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use a custom dark theme and 'Inter' font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e40ff', // A strong blue for highlights
+                        'secondary-gray': '#1f2937', // Darker background
+                        'vault-bg': '#0f172a', // Deep navy background
+                        'vault-card': '#1a2033', // Slightly lighter card color
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'blue-glow': '0 0 15px rgba(30, 64, 255, 0.7)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom font import for better look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="bg-vault-bg text-white font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-vault-bg/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-extrabold text-primary-blue flex items-center">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10l2 2 10-10 2 2V7m-5 5L4 12m16 0L4 12"></path></svg>
+                Vector Vault
+            </div>
+            <!-- Simple Status Button (Desktop) -->
+            <div class="hidden sm:inline-block px-4 py-2 text-sm font-semibold bg-gray-600 rounded-lg shadow-lg">
+                In Development
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="text-center py-20 md:py-32 overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4">
+                <p class="text-sm font-semibold uppercase tracking-widest text-primary-blue mb-4">
+                    The Ultimate Xbox File Management Tool - In Development
+                </p>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Unlock <span class="text-primary-blue">Total Control</span> Over Your Xbox Files
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                    Vector Vault is the native, fast, and secure file explorer designed specifically for the Xbox platform. We are currently building this application to give you granular access to your local and connected storage.
+                </p>
+
+                <!-- Primary CTA - Now a greyed-out non-interactive status message -->
+                <div class="inline-block px-8 py-3 text-lg font-bold text-gray-400 bg-gray-700 rounded-xl shadow-inner mb-16 select-none cursor-not-allowed">
+                    <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4m5.614-5.614a4 4 0 010 5.657l-1 1-1-1v-4l-4 4-1 1-1 1-2 2-2-2-1-1-1-1v-4l4 4-1-1z"></path></svg>
+                    Launching Soon
+                </div>
+
+            
+        </section>
+
+        <!-- Features Section (Content remains valid) -->
+        <section class="py-20 bg-vault-card/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Core Features Engineered for Xbox</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Feature 1: Fast Transfer Speeds -->
+                    <div class="bg-vault-card p-6 rounded-xl shadow-xl border border-primary-blue/20 hover:border-primary-blue transition duration-300">
+                        <div class="text-primary-blue mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Blazing Fast Transfers</h3>
+                        <p class="text-gray-400">Optimized for internal and external Xbox storage, ensuring minimal waiting time when moving large game captures or assets.</p>
+                    </div>
+
+                    <!-- Feature 2: Intuitive Controller Navigation -->
+                    <div class="bg-vault-card p-6 rounded-xl shadow-xl border border-primary-blue/20 hover:border-primary-blue transition duration-300">
+                        <div class="text-primary-blue mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 012 2v1h4a2 2 0 012 2v7a2 2 0 01-2 2h-4v1a2 2 0 01-2 2h-2a2 2 0 01-2-2v-1H5a2 2 0 01-2-2V9a2 2 0 012-2h4V6a2 2 0 012-2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Controller Optimized UI</h3>
+                        <p class="text-gray-400">Navigate directories, select files, and execute actions seamlessly using only your Xbox controller. No keyboard required.</p>
+                    </div>
+
+                    <!-- Feature 3: Deep Customization & Visibility -->
+                    <div class="bg-vault-card p-6 rounded-xl shadow-xl border border-primary-blue/20 hover:border-primary-blue transition duration-300">
+                        <div class="text-primary-blue mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.942 3.313.841 2.476 2.373a1.724 1.724 0 00.515 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-.515 2.573c.841 1.532-.942 3.313-2.474 2.476a1.724 1.724 0 00-2.574.515c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-.515c-1.543.942-3.313-.841-2.476-2.373a1.724 1.724 0 00-.515-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 00.515-2.573c-.841-1.532.942-3.313 2.474-2.476a1.724 1.724 0 002.574-.515z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Advanced Folder Visibility</h3>
+                        <p class="text-gray-400">View hidden files, manage permissions, and access the full depth of your USB devices and network shares directly from your console.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section (Updates/Pre-Launch) -->
+        <section id="updates" class="py-20 bg-vault-card shadow-inner border-t border-b border-primary-blue/30">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Development in Progress</h2>
+                <p class="text-lg text-gray-300 mb-8">
+                   I am hard at work perfecting Vector Vault. Follow my development channels to see my progress and prepare for launch day.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <!-- Main Update/Waitlist Link - Now a static greyed-out status button -->
+                    <div class="px-8 py-3 text-lg font-bold text-gray-400 bg-gray-700 rounded-xl shadow-inner select-none cursor-not-allowed">
+                        Beta Coming Soon
+                    </div>
+                    <!-- Documentation/Follow Link -->
+                    <a href="#" onclick="console.log('Redirecting to Dev Blog/Socials...'); return false;" class="px-8 py-3 text-lg font-bold text-white bg-transparent border-2 border-white/50 rounded-xl hover:border-primary-blue transition duration-300">
+                        Follow Development
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-vault-bg border-t border-secondary-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Vector Vault. All rights reserved. Xbox is a registered trademark of Microsoft Corporation.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
